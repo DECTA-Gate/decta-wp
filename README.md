@@ -7,7 +7,8 @@ This version was tested with WooCommerce 3.4.5 and WordPress 4.9, also with WooC
 
 ## Installation
 
-1. Upload the plugin to the '/wp-content/plugins/' directory
+1. Download the Payment Module archive, unpack it and upload its contents to a new folder '/wp-content/plugins/decta' 
+of your Wordpress installation
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to 
     ```text
