@@ -1,5 +1,4 @@
 # Decta
-
 This plugin add Custom Payment Gateways for WooCommerce. 
 
 ## Description

@@ -158,6 +158,7 @@ class DectaAPI
     public function log_error($error_text, $error_data = null)
     {
         $error_text = 'DectaGateway ERROR: '.$error_text.';';
+
         if ($error_data) {
             $error_text .= ' ERROR DATA: '.var_export($error_data, true).';';
         }
