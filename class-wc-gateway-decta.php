@@ -2,10 +2,10 @@
 /*
 Plugin Name: DectaGateway-WooCommerce
 Description: DectaGateway WooCommerce payment gateway
-Version: 2.0
+Version: 2.1
 Author: DectaGateway
 Author URI:
-Copyright: © 2018 DectaGateway
+Copyright: © 2020 DectaGateway
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
