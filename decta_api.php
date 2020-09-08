@@ -72,6 +72,7 @@ class DectaAPI
     {
         $private_key = $this->private_key;
         $original_params = $params;
+
         if (!empty($params)) {
             $params = json_encode($params);
         }
@@ -90,19 +91,26 @@ class DectaAPI
             curl_setopt($ch, CURLOPT_PUT, 1);
         }
 
-        if ($method == 'PUT' or $method == 'POST') {
+        if ($method == 'PUT' || $method == 'POST') {
+            $this->log_info('Post Request:');
+            $this->log_info(ROOT_URL.$route);
+            $this->log_info(var_export($params, true));
             curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
         }
+
         if ($method == 'GET') {
             $get_params = '';
             foreach ($original_params as $key => $value) {
                 $get_params .= $key.'='.urlencode($value).'&';
             }
             $get_params = trim($get_params, '&');
-            curl_setopt($ch, CURLOPT_URL, ROOT_URL.$route.'?'.$get_params);
+            $request = ROOT_URL.$route.'?'.$get_params;
+            $this->log_info('Get Request:');
+            $this->log_info($request);
+            curl_setopt($ch, CURLOPT_URL, $request);
         }
 
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        //curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_FORBID_REUSE, 1);
         curl_setopt($ch, CURLOPT_FRESH_CONNECT, 1);
@@ -124,6 +132,9 @@ class DectaAPI
 
         $result = json_decode($response, true);
 
+        $this->log_info('Response:');
+        $this->log_info(var_export($result, true));
+
         if (!$result) {
             $this->log_error('JSON parsing error/NULL API response');
 
@@ -139,7 +150,7 @@ class DectaAPI
         return $result;
     }
 
-    public function log_info($text, $error_data = null)
+    public function log_info($text)
     {
         $text = 'DectaGateway INFO: '.$text.';';
         $this->logger->log(DECTA_MODULE_VERSION.' '.$text);
