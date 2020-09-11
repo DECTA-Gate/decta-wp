@@ -1,7 +1,7 @@
 <?php
 
 define('DECTA_MODULE_VERSION', 'v2.0');
-define('ROOT_URL', 'https://gate-decta.andersenlab.com');
+define('ROOT_URL', 'https://gate.decta.com');
 class DectaAPI
 {
     public function __construct($private_key, $public_key, $logger)
