@@ -134,7 +134,7 @@ function wc_dectalv_init()
 
             $params = array(
                 'number' => (string)$order->get_order_number(),
-                'referrer' => 'Woocommerce v4.x module ' . DECTA_MODULE_VERSION,
+                'referrer' => 'woocommerce v4.x module ' . DECTA_MODULE_VERSION,
                 'language' =>  $this->_language('en'),
                 'success_redirect' => home_url().'/?wc-api=wc_gateway_decta&action=paid&id='.$order_id,
                 'failure_redirect' => $order->get_cancel_order_url(),
