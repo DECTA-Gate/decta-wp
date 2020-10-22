@@ -48,7 +48,9 @@ function wc_dectalv_init()
 
             // Define user set variables
             $this->title = "Visa / MasterCard";
+
             $this->description = __('Pay with Visa / Mastercard', 'woocommerce-decta');
+
             $this->debug = 'yes' === $this->get_option('debug', 'no');
 
             self::$log_enabled    = $this->debug;
@@ -80,6 +82,7 @@ function wc_dectalv_init()
                 $order->payment_complete();
                 $order->reduce_order_stock();
                 $order->add_order_note(__('Payment successful.', 'woocommerce-decta'));
+
             } else {
                 $order->update_status('wc-failed', __('ERROR: Payment was received, but order verification failed.'));
             }
