@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DectaGateway-WooCommerce\n"
+"POT-Creation-Date: 2020-10-21 07:42+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: DectaGateway <myemail@gmail.com>\n"
+"Language-Team: DectaGateway\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: class-wc-gateway-decta.php:51
+msgid "Pay with Visa / Mastercard"
+msgstr "Maksājiet ar Visa / Mastercard"
+
+#: class-wc-gateway-decta.php:82
+msgid "Payment successful."
+msgstr "Maksājums veiksmīgs."
+
+#: class-wc-gateway-decta.php:84
+msgid "ERROR: Payment was received, but order verification failed."
+msgstr "KĻŪDA: maksājums tika saņemts, taču pasūtījuma pārbaude neizdevās."
+
+#: class-wc-gateway-decta.php:93
+msgid "Payment"
+msgstr "Maksājums"
+
+#: class-wc-gateway-decta.php:93
+msgid "Authorization"
+msgstr "Autorizācija"
+
+#: class-wc-gateway-decta.php:97 class-wc-gateway-decta.php:98
+msgid "Enable API"
+msgstr "Ieslēgt API"
+
+#: class-wc-gateway-decta.php:104
+msgid "Public key"
+msgstr "Publiskā atslēga"
+
+#: class-wc-gateway-decta.php:106
+msgid "Please enter your public key."
+msgstr "Lūdzu, ievadiet savu publisko atslēgu."
+
+#: class-wc-gateway-decta.php:110
+msgid "Secret key"
+msgstr "Slepenā atslēga"
+
+#: class-wc-gateway-decta.php:112
+msgid "Please enter your secret key."
+msgstr "Lūdzu, ievadiet savu slepeno atslēgu."
+
+#: class-wc-gateway-decta.php:116
+msgid "Debug Log"
+msgstr "Atkļūdošanas žurnāls"
+
+#: class-wc-gateway-decta.php:118
+msgid "Enable logging"
+msgstr "Iespējot reģistrēšanu, izmantojot atkļūdošanas informāciju"
+
+#: class-wc-gateway-decta.php:120
+#, php-format
+msgid "Log DectaGateway events, inside <code>%s</code>"
+msgstr "DectaGateway notikumu žurnāls iekšā <code>%s</code>"
