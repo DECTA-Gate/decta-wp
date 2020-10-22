@@ -84,7 +84,7 @@ function wc_dectalv_init()
                 $order->add_order_note(__('Payment successful.', 'woocommerce-decta'));
 
             } else {
-                $order->update_status('wc-failed', __('ERROR: Payment was received, but order verification failed.'));
+                $order->update_status('wc-failed', __('ERROR: Payment was received, but order verification failed.', 'woocommerce-decta'));
             }
             $decta->log_info('Done processing success, redirecting');
             header("Location: " . $this->get_return_url($order));
@@ -135,10 +135,12 @@ function wc_dectalv_init()
                 new DectaLoggerWC(self::$log_enabled)
             );
 
+            $lang = locale_get_primary_language(get_locale());
+
             $params = array(
                 'number' => (string)$order->get_order_number(),
                 'referrer' => 'woocommerce v4.x module ' . DECTA_MODULE_VERSION,
-                'language' =>  $this->_language('en'),
+                'language' =>  $this->_language($lang),
                 'success_redirect' => home_url().'/?wc-api=wc_gateway_decta&action=paid&id='.$order_id,
                 'failure_redirect' => $order->get_cancel_order_url(),
                 'currency' => $order->get_currency()
