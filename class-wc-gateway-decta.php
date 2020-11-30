@@ -181,7 +181,7 @@ function wc_dectalv_init()
         {
             $params['products'][] = [
                 'price' => round($order->get_total(), 2),
-                'title' => 'default',
+                'title' => __('Invoice for payment #') . (string)$order->get_order_number(),
                 'quantity' => 1
             ];
         }

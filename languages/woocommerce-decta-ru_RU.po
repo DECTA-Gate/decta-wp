@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DectaGateway-WooCommerce\n"
-"POT-Creation-Date: 2020-10-21 07:42+0300\n"
+"POT-Creation-Date: 2020-11-30 13:26+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DectaGateway <myemail@gmail.com>\n"
 "Language-Team: DectaGateway\n"
@@ -15,59 +15,63 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
 "_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_html__;esc_html_e\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 
-#: class-wc-gateway-decta.php:51
+#: class-wc-gateway-decta.php:52
 msgid "Pay with Visa / Mastercard"
 msgstr "Оплата картой Visa / Mastercard"
 
-#: class-wc-gateway-decta.php:82
+#: class-wc-gateway-decta.php:84
 msgid "Payment successful."
 msgstr "Платеж прошел успешно."
 
-#: class-wc-gateway-decta.php:84
+#: class-wc-gateway-decta.php:87
 msgid "ERROR: Payment was received, but order verification failed."
 msgstr "ОШИБКА: платеж был получен, однако проверка заказа не прошла."
 
-#: class-wc-gateway-decta.php:93
+#: class-wc-gateway-decta.php:96
 msgid "Payment"
 msgstr "Платеж"
 
-#: class-wc-gateway-decta.php:93
+#: class-wc-gateway-decta.php:96
 msgid "Authorization"
 msgstr "Авторизация"
 
-#: class-wc-gateway-decta.php:97 class-wc-gateway-decta.php:98
+#: class-wc-gateway-decta.php:100 class-wc-gateway-decta.php:101
 msgid "Enable API"
 msgstr "Включить API"
 
-#: class-wc-gateway-decta.php:104
+#: class-wc-gateway-decta.php:107
 msgid "Public key"
 msgstr "Открытый ключ"
 
-#: class-wc-gateway-decta.php:106
+#: class-wc-gateway-decta.php:109
 msgid "Please enter your public key."
 msgstr "Пожалуйста, введите ваш открытый ключ."
 
-#: class-wc-gateway-decta.php:110
+#: class-wc-gateway-decta.php:113
 msgid "Secret key"
 msgstr "Секретный ключ"
 
-#: class-wc-gateway-decta.php:112
+#: class-wc-gateway-decta.php:115
 msgid "Please enter your secret key."
 msgstr "Пожалуйста, введите свой секретный ключ."
 
-#: class-wc-gateway-decta.php:116
+#: class-wc-gateway-decta.php:119
 msgid "Debug Log"
 msgstr "Журнал отладки"
 
-#: class-wc-gateway-decta.php:118
+#: class-wc-gateway-decta.php:121
 msgid "Enable logging"
 msgstr "Включить ведение журнала  с отладочной информацией"
 
-#: class-wc-gateway-decta.php:120
+#: class-wc-gateway-decta.php:123
 #, php-format
 msgid "Log DectaGateway events, inside <code>%s</code>"
 msgstr "Журнал событий DectaGateway внутри <code>%s</code>"
+
+#: class-wc-gateway-decta.php:184
+msgid "Invoice for payment #"
+msgstr "Счет на оплату #"
