@@ -135,7 +135,7 @@ function wc_dectalv_init()
                 new DectaLoggerWC(self::$log_enabled)
             );
 
-            $lang = locale_get_primary_language(get_locale());
+            $lang = stristr(get_locale(), '_', true);
 
             $params = array(
                 'number' => (string)$order->get_order_number(),
